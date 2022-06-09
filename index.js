@@ -26,6 +26,6 @@ app.use('/show', show)
 app.use('/admin', admin);
 app.use('/', home);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 80, () => {
     console.log('serving at port 3000')
 });
