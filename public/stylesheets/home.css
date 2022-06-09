@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rakkas', cursive;
+    font-size: 2rem;
+}
+
+header {
+    height: 250px;
+    width: 98.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 65px;
+    margin-left: 10vw;
+    margin-top: 90px;
+    margin-bottom: 0;
+    color: #2587DA;
+}
+
+nav {
+    width: 98.5vw;
+    height: 100px;
+    background-color: #DA7825;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:nth-child(even){
+    color: #2587DA;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 48.5vw 48.5vw;
+    grid-gap: 1vw;
+    text-align: right;
+    margin: 0;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section div{
+    border: 0.3vw solid black;
+}
+
+section div img {
+    width: 100%;
+    height: 250px;
+}
+
+section div h1 a {
+    margin-top: 15px;
+    margin-right: 15px;
+    color: #2587DA;
+}
+
+footer {
+    height: 200px;
+    background-color: #2587DA;
+    text-align: right;
+    padding-right: 25px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+
+footer ul li img {
+    width: 50px;
+    height: 50px;
+}

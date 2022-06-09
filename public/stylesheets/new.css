@@ -1,0 +1,35 @@
+body {
+    font-family: 'Rakkas', cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+textarea {
+    height: 50vh;
+    text-align: right;
+    font-size: 25px;
+
+}
+
+input {
+    height: 35px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+button {
+    font-size: 25px;
+    background-color: #2587DA;
+    color: white;
+}

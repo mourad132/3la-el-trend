@@ -1,0 +1,23 @@
+div {
+    margin: 30vh 50vh 50vw 35vw;
+}
+/* 2587DA */
+input {
+    height: 55px;
+    width: 380px;
+    background-color: #2587DA;
+    border: 2px solid #DA7825;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #DA7825;
+    width: 390px;
+    height: 45px;
+    display: block;
+    color: white;
+    font-size: 25px;
+}

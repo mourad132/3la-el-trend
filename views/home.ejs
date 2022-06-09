@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>علي الترند</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/home.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1><%= page %></h1>
+            <img src="imgs/Logo.png">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/رياضة">رياضة</a></li>
+                <li><a href="/فن">فن</a></li>
+                <li><a href="/اخبار">اخبار</a></li>
+                <li><a href="/">الصفحة الرئيسية</a></li>
+                <% if(loggedIn){ %>
+                    <li><a href="/admin/new">اضف مقال جديد</a></li>
+                <% } %>
+            </ul>
+        </nav>
+            <% if(blogs.length == 0){ %>
+            <section>
+                <h1>!لا يوجد اخبار في الوقت الحالي</h1>
+            <% } %>
+            <section class="cards">
+            <% blogs.forEach(blog => { %>
+                <div>
+                    <% if(loggedIn){ %>
+                        <a href="/admin/edit/<%= blog._id %>">Edit</a>
+                        <a href="/admin/delete/<%= blog._id %>">Delete</a>
+                    <% } %>
+                    <% if(blog.image){ %>
+                        <img src="<%= blog.image %>">
+                    <% } else { %>
+                        <img src="imgs/Logo.png">
+                    <% } %>
+                    <h3><a href="/show/<%= blog._id %>"><%= blog.title %></a></h3>
+                </div>
+            <% }) %>
+        </section>
+        <!-- <footer>
+            <h2> :تابعنا علي </h2>
+            <ul>
+                <li><img src="imgs/download.jpg"></li>
+                <li><img src="imgs/download.jpg"></li>
+                <li><img src="imgs/download.jpg"></li>
+            </ul>
+        </footer> -->
+    </body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rakkas', cursive;
+}
+
+section {
+    margin-top: 0;
+    height: 90vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    background-color: rgba(37,135,218, 0.5);
+}
+
+div {
+    text-align: right;
+    width: 80vw;
+}
+
+section h1 {
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Rakkas', cursive;
+
+}
+
+div h1 {
+    text-align: right;
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: #DA7825;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:nth-child(even){
+    color: #2587DA;
+}
